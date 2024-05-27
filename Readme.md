@@ -2,7 +2,7 @@
 
 * Студент: [Антон Климушин](https://up.htmlacademy.ru/htmlcss/40/user/253243).
 * Наставник: [Евгения Подопригора](https://htmlacademy.ru/profile/id2387199)
-
+* Сайт: [Проект Седона](https://kaskad4.github.io/253243-sedona-40/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
