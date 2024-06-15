@@ -9,7 +9,7 @@
   <body>
     <header class="page-header">
       <a class="navigation-logo" href="index.html" aria-current="page">
-        <img class="header-logo" src="#" alt="Логотип Седоны">
+        <img class="header-logo" src="images/Svg/logo.svg" width="140" height="70" alt="Логотип Седоны">
       </a>
       <nav class="main-header-navigation">
         <ul class="navigation-main-list">
@@ -44,6 +44,8 @@
 
     <main class="main-inner-catalog">
       <section class="inner-catalog">
+        <img class="Background-catalog-image" src="images/Background/catalog-filter.jpg" width="1200" height="412"
+          alt="Размытое фото гор Седоны">
         <h1 class="inner-tittle-catalog">Гостиницы Седоны</h1>
         <ol class="breadcrumbs-header">
           <li class="breadcumbs-item">
@@ -58,7 +60,7 @@
       </section>
 
       <section class="catalog-filter">
-        <h3 class="visualy-hidden">Фильтр гостиниц Седоны</h3>
+        <h2 class="visualy-hidden">Фильтр гостиниц Седоны</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-group">
             <legend class="filter-title">Инфрастуктура</legend>
@@ -126,34 +128,40 @@
       </section>
 
       <section class="sort-apartment">
-        <h3 class="visually-hidden">Сортировка гостиниц Седоны</h3>
+        <h2 class="visually-hidden">Сортировка гостиниц Седоны</h2>
         <p class="sort-apartment-message">Найдено Гостиниц: 38</p>
-      </section>
 
-      <select class="select-control" aria-label="Сортировка">
-        <option value="cheap">Сначала дешевые</option>
-        <option value="popular">Сначала популярные</option>
-        <option value="expensive">Сначала дорогие</option>
-      </select>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="popular">Сначала популярные</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
 
-      <a class="button button-tile button-сurrent" href="catalog.html?view=card">
-        <span class="visually-hidden">Показать карточки</span>
-      </a>
-      <a class="button button-card" href="catalog.html?view=tile">
-        <span class="visually-hidden">Показать мозаикой</span>
-      </a>
-      <a class="button button-list" href="catalog.html?view=list">
-        <span class="visually-hidden">Показать списком</span>
-      </a>
-      </section>
+        <ul class="button-viev-list">
+          <li class="button-view-item">
+            <a class="button button-tile button-сurrent" href="catalog.html?view=card">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+          </li>
+          <li class="button-view-item">
+            <a class="button button-card" href="catalog.html?view=tile">
+              <span class="visually-hidden">Показать мозаикой</span>
+            </a>
+          </li>
+          <li class="button-view-item">
+            <a class="button button-list" href="catalog.html?view=list">
+              <span class="visually-hidden">Показать списком</span>
+            </a>
+          </li>
+        </ul>
 
-      <section class="apartment-catalog">
-        <h3 class="visually-hidden">Гостиницы и мотели Седоны</h3>
+        <h2 class="visually-hidden">Гостиницы и мотели Седоны</h2>
         <ul class="catalog-list-apartment">
           <li class="catalog-item-apartment">
             <a class="catalog-link-apartment" href="#">
-              <img class="apartment-catalog-image" src="#" alt="Ущелье с видом на звезды">
-              <h3 class="apartment-catalog-title">Amara Resort & Spa</h3>
+              <img class="apartment-catalog-image" src="images/Amara-hotel-1.jpg" width="300" height="212"
+                alt="Ущелье с видом на звезды">
+              <h2 class="apartment-catalog-title">Amara Resort & Spa</h2>
             </a>
             <p class="catalog-apartment-info">
               <span class="apartment-type">Гостиница</span>
@@ -173,8 +181,9 @@
 
           <li class="catalog-item-apartment">
             <a class="catalog-link-apartment" href="#">
-              <img class="apartment-catalog-image" src="#" alt="Вид на горы в сумерках">
-              <h3 class="apartment-catalog-title">Villas at Poco Diablo</h3>
+              <img class="apartment-catalog-image" src="images/Villas-poco-diablo-hotel-2.jpg" width="300" height="212"
+                alt="Вид на горы в сумерках">
+              <h2 class="apartment-catalog-title">Villas at Poco Diablo</h2>
             </a>
             <p class="catalog-apartment-info">
               <span class="apartment-type">Гостиница</span>
@@ -194,8 +203,9 @@
 
           <li class="catalog-item-apartment">
             <a class="catalog-link-apartment" href="#">
-              <img class="apartment-catalog-image" src="#" alt="Вид на горы на рассвете">
-              <h3 class="apartment-catalog-title">Desert Quail Inn</h3>
+              <img class="apartment-catalog-image" src="images/Desert-Quail-inn-3.jpg" width="300" height="212"
+                alt="Вид на горы на рассвете">
+              <h2 class="apartment-catalog-title">Desert Quail Inn</h2>
             </a>
             <p class="catalog-apartment-info">
               <span class="apartment-type">Гостиница</span>
@@ -215,8 +225,9 @@
 
           <li class="catalog-item-apartment">
             <a class="catalog-link-apartment" href="#">
-              <img class="apartment-catalog-image" src="#" alt="Горы на закате и звездое небо">
-              <h3 class="apartment-catalog-title">GreenTree Inn</h3>
+              <img class="apartment-catalog-image" src="images/green-tree-hotel-4.jpg" width="300" height="212"
+                alt="Горы на закате и звездое небо">
+              <h2 class="apartment-catalog-title">GreenTree Inn</h2>
             </a>
             <p class="catalog-apartment-info">
               <span class="apartment-type">Гостиница</span>
@@ -272,7 +283,7 @@
     </main>
 
     <footer class="page-footer">
-      <h3 class="visualy-hidden">Контакты</h3>
+      <h2 class="visualy-hidden">Контакты</h2>
       <ul class="social-icon-list">
         <li class="social-icon-item">
           <a class="footer-social-icon vk" href="https://t.me/htmlacademys">
