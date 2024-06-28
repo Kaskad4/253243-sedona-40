@@ -3,15 +3,16 @@
 
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Гостиницы Седоны</title>
   </head>
 
   <body>
     <header class="page-header">
-      <a class="navigation-logo" href="index.html" aria-current="page">
-        <img class="header-logo" src="images/Svg/logo.svg" width="140" height="70" alt="Логотип Седоны">
-      </a>
       <nav class="main-header-navigation">
+        <a class="navigation-logo" href="index.html" aria-current="page">
+          <img class="header-logo" src="images/svg/logo.svg" width="140" height="70" alt="Логотип Седоны">
+        </a>
         <ul class="navigation-main-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -25,7 +26,7 @@
         </ul>
         <ul class="navigation-user-list">
           <li class="navigation-item">
-            <a class="button" href="#">
+            <a class="button navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
@@ -43,10 +44,8 @@
     </header>
 
     <main class="main-inner-catalog">
-      <section class="inner-catalog">
-        <img class="Background-catalog-image" src="images/Background/catalog-filter.jpg" width="1200" height="412"
-          alt="Размытое фото гор Седоны">
-        <h1 class="inner-tittle-catalog">Гостиницы Седоны</h1>
+      <section class="inner-catalog-filter">
+        <h1 class="inner-title-catalog">Гостиницы Седоны</h1>
         <ol class="breadcrumbs-header">
           <li class="breadcumbs-item">
             <a class="breadcrumbs-link" href="index.html">
@@ -159,7 +158,7 @@
         <ul class="catalog-list-apartment">
           <li class="catalog-item-apartment">
             <a class="catalog-link-apartment" href="#">
-              <img class="apartment-catalog-image" src="images/Amara-hotel-1.jpg" width="300" height="212"
+              <img class="apartment-catalog-image" src="images/amara-hotel-1.jpg" width="300" height="212"
                 alt="Ущелье с видом на звезды">
               <h2 class="apartment-catalog-title">Amara Resort & Spa</h2>
             </a>
@@ -181,7 +180,7 @@
 
           <li class="catalog-item-apartment">
             <a class="catalog-link-apartment" href="#">
-              <img class="apartment-catalog-image" src="images/Villas-poco-diablo-hotel-2.jpg" width="300" height="212"
+              <img class="apartment-catalog-image" src="images/villas-poco-diablo-hotel-2.jpg" width="300" height="212"
                 alt="Вид на горы в сумерках">
               <h2 class="apartment-catalog-title">Villas at Poco Diablo</h2>
             </a>
@@ -203,7 +202,7 @@
 
           <li class="catalog-item-apartment">
             <a class="catalog-link-apartment" href="#">
-              <img class="apartment-catalog-image" src="images/Desert-Quail-inn-3.jpg" width="300" height="212"
+              <img class="apartment-catalog-image" src="images/desert-quail-inn-3.jpg" width="300" height="212"
                 alt="Вид на горы на рассвете">
               <h2 class="apartment-catalog-title">Desert Quail Inn</h2>
             </a>
@@ -283,30 +282,30 @@
     </main>
 
     <footer class="page-footer">
-      <h2 class="visualy-hidden">Контакты</h2>
-      <ul class="social-icon-list">
-        <li class="social-icon-item">
-          <a class="footer-social-icon vk" href="https://t.me/htmlacademys">
-            <span class="visually-hidden">Vkontakte</span>
-          </a>
-        </li>
-        <li class="social-icon-item">
-          <a class="footer-social-icon telegram" href="https://t.me/htmlacademys">
-            <span class="visually-hidden">Telegram</span>
-          </a>
-        </li>
-        <li class="social-icon-item">
-          <a class="footer-social-icon youtube" href="https://t.me/htmlacademys">
-            <span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-      </ul>
-      <a class="footer-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="footer-link-academy" href="https://htmlacademy.ru/intensive/htmlcss">
-        <span class="visually-hidden">
-          .html Academy
-        </span>
-      </a>
+      <div class="page-footer-container">
+        <h2 class="visualy-hidden">Контакты</h2>
+        <ul class="social-icon-list">
+          <li class="social-icon-item">
+            <a class="footer-social-icon vk" href="#" aria-label="Вконтакте">
+              <img class="footer-social-image" src="./images/svg/vk-icon.svg" width="24px" height="14px" alt="иконка вконтакте">
+            </a>
+          </li>
+          <li class="social-icon-item">
+            <a class="footer-social-icon telegram" href="https://t.me/htmlacademys" aria-label="Телеграм">
+              <img class="footer-social-image" src="./images/svg/telegram-icon.svg" width="18px" height="15px" alt="иконка телеграм">
+            </a>
+          </li>
+          <li class="social-icon-item">
+            <a class="footer-social-icon youtube" href="#" aria-label="Ютуб">
+              <img class="footer-social-image" src="./images/svg/youtube-icon.svg" width="22px" height="17px" alt="иконка ютуб">
+            </a>
+          </li>
+        </ul>
+        <a class="footer-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="footer-link-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img class="footer-copyright-image" src="./images/svg/html-academy.svg" width="115px" height="33px" alt="HTML Academy">
+        </a>
+      </div>
     </footer>
   </body>
 
