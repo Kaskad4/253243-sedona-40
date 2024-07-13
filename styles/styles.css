@@ -14,29 +14,68 @@
   font-display: swap;
 }
 
+
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #000;
   background-color: #fff;
   margin: 0 auto;
+  min-height: 100%;
+
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main-body-container {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+.main-container {
+  flex-grow: 1;
+}
 
 
 .sedona-info {
   background-color: #294c66;
-  background-size: cover;
+  background-size: auto, cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
+  padding-top: 50px;
+  padding-bottom: 80px;
   background-image: url(../images/background/main-sedona-background.jpg);
-
 }
 
-.welcome-text {
+.sedona-info-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.welcome-text-sedona {
   text-align: center;
+  padding: 70px 0 70px 0;
 }
 
 .sedona-feature-image {
@@ -68,7 +107,7 @@ body {
 .subscribe-field {
   width: 452px;
   padding: 12px 20px;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   border: none;
 }
 
@@ -77,7 +116,7 @@ body {
   background-color: #82B3D3;
   color: #fff;
   padding: 8px 50px;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   border: none;
   font-size: 20px;
   line-height: 36px;
@@ -97,8 +136,14 @@ ul a {
   color: #000;
 }
 
+
 .page-header {
-  display: block;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
+  margin: 0 auto;
+  align-items: center;
   color: #000;
   font-family: "PT Sans";
   font-weight: 700;
@@ -107,6 +152,53 @@ ul a {
   background-color: #FFFFFF;
 
 }
+
+.main-header-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.navigation-logo {
+  width: 140px;
+  height: 70px;
+  margin-left: 30px;
+}
+
+.header-logo {
+  width: 140px;
+  height: 70px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+}
+
+.navigation-main-list {
+  max-width: 500px;
+  margin-right: 0 auto;
+}
+
+.navigation-user-list {
+  max-width: 300px;
+  align-items: center;
+
+}
+
+.navigation-user-item {
+
+}
+
+.navigation-link {
+  padding: 20px 15px;
+}
+
 
 .navigation-main-list,
 .navigation-user-list {
@@ -137,9 +229,6 @@ ul a {
   line-height: 26px;
 }
 
-.features-sedona-list {
-  list-style-type: none;
-}
 
 .sedona-feature-title {
   font-size: 24px;
@@ -153,7 +242,7 @@ ul a {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  text-align: center;
+
 }
 
 .feature-column-text {
@@ -165,6 +254,11 @@ ul a {
 .feature-column-text
 .sedona-feature-title {
   color: #fff;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
 }
 
 .feature-column-text
@@ -227,6 +321,39 @@ ul a {
   line-height: 40px;
   text-decoration: none;
   color: #000;
+}
+
+/* Sedona-main-features */
+
+.features-sedona-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.features-sedona-item {
+  width: 400px;
+  height: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-sedona-box {
+  color: white;
+  background-color: #82B3D3;
+}
+
+.features-sedona-item {
+  padding: 103px 85px;
+}
+
+.feature-sedona-image,
+.devil-bridge-image {
+  width: 800px;
+  height: 385px;
 }
 
 
