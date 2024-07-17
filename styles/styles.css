@@ -132,14 +132,14 @@ ul a {
 
 .page-header {
   display: flex;
-  margin: 0 auto;
+  padding-left: 70px;
+  padding-right: 70px;
   color: #000;
   font-family: "PT Sans";
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   background-color: #FFFFFF;
-
 }
 
 .main-header-navigation {
@@ -171,16 +171,12 @@ ul a {
 
 .navigation-main-list {
   max-width: 500px;
-  margin-right: 0 auto;
 }
 
 .navigation-user-list {
-  max-width: 300px;
+  max-width: 400px;
   align-items: center;
-
-}
-
-.navigation-user-item {
+  margin-left: auto;
 
 }
 
@@ -297,10 +293,6 @@ ul a {
   border: none;
 }
 
-.get-interested-center {
-  text-align: center;
-}
-
 .social-icon-list {
   list-style-type: none;
 }
@@ -314,7 +306,12 @@ ul a {
 
 /* Sedona-main-features */
 
+.sedona-main-features {
+  text-align: center;
+}
+
 .features-sedona-list {
+  width: 1200px;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -324,26 +321,61 @@ ul a {
 
 .features-sedona-item {
   width: 400px;
-  height: 385px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 102px 85px;
+
 }
 
-.feature-sedona-box {
+.feature-sedona-widebox {
+  width: 1200px;
   color: white;
   background-color: #82B3D3;
+  display: flex;
 }
 
-.features-sedona-item {
-  padding: 103px 85px;
+.feature-widebox-container {
+  width: 400px;
+  padding: 102px 85px;
+}
+
+.widebox-container-reverse {
+  flex-direction: row-reverse;
 }
 
 .feature-sedona-image,
 .devil-bridge-image {
-  width: 800px;
-  height: 385px;
+  height: auto;
 }
+
+/* Sedona Service */
+
+.sedona-service-list {
+  width: 1200px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.sedona-service-item {
+  width: 400px;
+  padding: 80px 85px;
+}
+
+.sedona-service-container {
+  padding: 65px 0;
+}
+
+.service-motel,
+.service-souvenier {
+  background-color: hsla(204, 48%, 67%, 0.12);
+}
+
+/* Get Interested */
+
+.get-interested-container {
+  text-align: center;
+  padding: 96px 304px;
+}
+
 
 
 /* CATALOG */
